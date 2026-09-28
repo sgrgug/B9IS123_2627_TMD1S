@@ -15,9 +15,33 @@ const sum = array.reduce((total, num) => total + num, 0)
 console.log(sum)
 
 console.log(sum)
+
+
+
+// Ex.2
+const sumOfAllMul = (a, b, n) => {
+  let sum = 0;
+  for (let i = 1; i < n; i++) {
+    if(i % a === 0 || i % b === 0) {
+      sum = sum + i
+    }
+  }
+
+  return sum;
+}
+
+const sumAll = sumOfAllMul(3, 5, 10)
+console.log("testing", sumAll)
+
 </script>
 </head>
 <body>
-<p>Hello World Sagar Gurung
+<p>Hello World Sagar Gurung</p>
+
+
+<b>Ex. 2 Create a function to find the sum of all the multiples of a or b below n.</b>
+
+
+
 </body>
 </html>
