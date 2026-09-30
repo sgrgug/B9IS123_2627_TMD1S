@@ -50,6 +50,22 @@ const sumOfAllMulEx3 = (a, b, arr) => {
 const sumAllEx3 = sumOfAllMulEx3(4,5,listL)
 console.log("Ex.3", sumAllEx3)
 
+// Ex. 4
+const sumMultiples = (a, l) => {
+  return l
+    .filter(num => a.some(x => num % x === 0))
+    .reduce((sum, num) => sum + num, 0);
+}
+
+const a = [2, 3];
+const l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10];
+
+console.log(sumMultiples(a, l));
+
+// Ex. 5
+
+
+
 </script>
 </head>
 <body>
